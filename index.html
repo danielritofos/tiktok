@@ -40,6 +40,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">TikTok Followers</a>
                         </li>
+                    </ul>
+                    <ul class="navbar-nav float-right">
                         <li class="nav-item d-none d-md-block">
                             <a class="nav-link" href="javascript:void(0)">
                                 <div class="customize-input">
@@ -47,19 +49,18 @@
                                         class="custom-select form-control bg-white custom-radius custom-shadow border-0">
                                         <option selected>RU</option>
                                         <option>UA</option>
+                                        <option>EN</option>
                                     </select>
                                 </div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav float-right">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
                                     width="40">
-                                <span class="ml-2 d-none d-lg-inline-block"><span>Добро пожаловать,</span> <span
-                                        class="text-dark">Матвей</span> <i data-feather="chevron-down"
+                                <span class="ml-2 d-none d-lg-inline-block">
+                                    <span>Добро пожаловать,</span> <span class="text-dark">Матвей</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -70,13 +71,9 @@
                                         class="svg-icon mr-2 ml-1"></i>
                                     Мой баланс</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
-                                        class="svg-icon mr-2 ml-1"></i>
-                                    Account Setting</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
-                                    Logout</a>
+                                    Выйти</a>
                                 <div class="dropdown-divider"></div>
                             </div>
                         </li>
@@ -192,7 +189,6 @@
                                                         <a class="dropdown-item" href="#">Показать список</a>
                                                         <a class="dropdown-item" href="#">Запустить подписку</a>
                                                         <a class="dropdown-item disabled text-muted" href="#">Удалить</a>
-                                                        <a class="dropdown-item disabled text-muted" href="#">Скачать</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -209,7 +205,6 @@
                                                         <a class="dropdown-item" href="#">Показать список</a>
                                                         <a class="dropdown-item disabled text-muted" href="#">Запустить подписку</a>
                                                         <a class="dropdown-item disabled text-muted" href="#">Удалить</a>
-                                                        <a class="dropdown-item disabled text-muted" href="#">Скачать</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -226,7 +221,6 @@
                                                         <a class="dropdown-item" href="#">Показать список</a>
                                                         <a class="dropdown-item" href="#">Запустить подписку</a>
                                                         <a class="dropdown-item disabled text-muted" href="#">Удалить</a>
-                                                        <a class="dropdown-item disabled text-muted" href="#">Скачать</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -254,7 +248,7 @@
                                 <h6>Запустите новый сбор подписчиков</h6>
                                 <div class="card mt-2">
                                     <div class="card-body">
-                                        <h4 class="card-title">Выберите тип сбора подписчиков</h4>
+                                        <p class="card-title">Выберите тип сбора подписчиков</p>
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" data-toggle="collapse" href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample" checked>
                                             <label class="form-check-label" for="inlineRadio1">По ключевым словам</label>
@@ -265,7 +259,7 @@
                                         </div>
                                         <div class="collapse show" id="collapseExample1" style="">
                                             <div>
-                                                <h4 class="card-title mt-4">Введите ключевые слова</h4>
+                                                <p class="card-title mt-4">Введите ключевые слова</p>
                                                 <form>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" value="">
@@ -276,7 +270,7 @@
                                         </div>
                                         <div class="collapse" id="collapseExample1" style="">
                                             <div>
-                                                <h4 class="card-title mt-4">Введите аккаунт для сбора</h4>
+                                                <p class="card-title mt-4">Введите аккаунт для сбора</p>
                                                 <form>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" value="">
@@ -290,7 +284,7 @@
 
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title">Введите желаемое количество подписчиков</h4>
+                                        <p class="card-title">Введите желаемое количество подписчиков</p>
                                         <form class="mt-4">
                                             <div class="form-group">
                                                 <input type="number" class="form-control" value="0">
