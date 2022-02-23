@@ -330,7 +330,6 @@ request.addEventListener("readystatechange", () => {
       document.getElementbyId("sessionoutput").innerText(request.responseText);
     }
 });
-respone.headers.add('Access-Control-Allow-Origin', '*');
 request.send();
     </script>
 </body>
