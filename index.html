@@ -266,15 +266,16 @@
                                                 <p class="font-12">Если вы выбрали сбор <span style="font-weight: bold">по ключевым словам</span>, заполните это поле, перечисляя слова <span style="font-weight: bold">через запятую</span></p>
                                             </div>
                                         </div>
-                                        <!-- <div class="collapse" id="collapseExample1" style="">
+                                        <div class="collapse" id="collapseExample1" style="">
                                             <div>
                                                 <p class="card-title mt-4">Введите аккаунт для сбора</p>
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" value="">
                                                 </div>
-                                                <p class="font-12">Если вы выбрали сбор <span style="font-weight: bold">активных пользователей</span>, заполните это поле, указав ник пользователя <span style="font-weight: bold">со знаком @ в начале</span></p>
+                                                <!-- <p class="font-12">Если вы выбрали сбор <span style="font-weight: bold">активных пользователей</span>, заполните это поле, указав ник пользователя <span style="font-weight: bold">со знаком @ в начале</span></p> -->
+                                                <p id="12345689">http://194.58.100.51:5000/session/</p>
                                             </div>
-                                        </div> -->
+                                        </div>
                                     </div>
                                 </div>
 
@@ -318,6 +319,19 @@
     <script src="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="dist/js/pages/dashboards/dashboard1.min.js"></script>
+
+    <script>
+const request = new XMLHttpRequest();
+const url = "http://194.58.100.51:5000/session/";
+request.open('GET', url);
+request.setRequestHeader('Content-Type', 'application/x-www-form-url');
+request.addEventListener("readystatechange", () => {
+    if (request.readyState === 4 && request.status === 200) {
+      document.querySelector("#12345689").innerText(request.responseText);
+    }
+});
+request.send();
+    </script>
 </body>
 
 </html>
