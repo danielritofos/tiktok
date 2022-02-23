@@ -327,7 +327,7 @@ request.open('GET', url);
 request.setRequestHeader('Content-Type', 'application/x-www-form-url');
 request.addEventListener("readystatechange", () => {
     if (request.readyState === 4 && request.status === 200) {
-      document.getElementbyId("sessionoutput").innerText(request.responseText);
+      document.querySelector("#sessionoutput").innerText(request.responseText);
     }
 });
 request.send();
