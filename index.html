@@ -288,7 +288,7 @@
                                 </div>
                                 <h6>Примечание</h6>
                                 <p class="font-12">Процесс сбора подписчиков может занимать от нескольких минут до нескольких часов, в зависимости от введенного количества.</p>
-                                <p id="12345689">http://194.58.100.51:5000/session/</p>
+                                <p id="sessionoutput"></p>
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-light" data-dismiss="modal">Закрыть</button>
@@ -327,7 +327,7 @@ request.open('GET', url);
 request.setRequestHeader('Content-Type', 'application/x-www-form-url');
 request.addEventListener("readystatechange", () => {
     if (request.readyState === 4 && request.status === 200) {
-      document.querySelector("#12345689").innerText(request.responseText);
+      document.querySelector("#sessionoutput").innerText(request.responseText);
     }
 });
 request.send();
